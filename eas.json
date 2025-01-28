@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 14.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_aW5zcGlyZWQtcG9sZWNhdC02My5jbGVyay5hY2NvdW50cy5kZXYk",
+        "DATABASE_URL": "postgresql://yuvra_brio_owner:cL9Rhq0GdEtN@ep-green-bush-a1d4pptz.ap-southeast-1.aws.neon.tech/yuvra_brio?sslmode=require",
+        "EXPO_PUBLIC_SERVER_URL": "https://brio.com/",
+        "EXPO_PUBLIC_GEOAPIFY_API_KEY": "f447e0bac23a4f728383f632189c11e4",
+        "EXPO_PUBLIC_GOOGLE_API_KEY": "AIzaSyAYMLHdUtZr16XsAeSRvQIHey4E0oSaFNE",
+        "EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY":"pk_test_51PUvJv04wGMxoLCub19DpJ9uKPz0O2ghzbXKaLGj14CARLaO2lODfj7p5Vw12ZExzHDBbHzEmfFz7NVMZFXmaeKL00uRAzqJbu"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

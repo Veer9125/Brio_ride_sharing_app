@@ -29,7 +29,7 @@ const Layout = () => {
         tabBarStyle: {
           backgroundColor: '#333333',
           borderRadius: 50,
-          paddingHorizontal: 0,
+          paddingHorizontal: 10,
           paddingBottom: 30,
           overflow: 'hidden',
           marginHorizontal: 10,
@@ -50,16 +50,6 @@ const Layout = () => {
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon focused={focused} source={icons.home} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="chat"
-        options={{
-          title: 'Chat',
-          headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} source={icons.chat} />
           ),
         }}
       />

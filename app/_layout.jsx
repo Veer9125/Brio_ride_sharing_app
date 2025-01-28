@@ -9,6 +9,9 @@ import * as SplashScreen from 'expo-splash-screen';
 import { ClerkProvider, ClerkLoaded } from '@clerk/clerk-expo';
 import { Slot } from 'expo-router';
 import { tokenCache } from '../lib/cache';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native'
 
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
@@ -42,7 +45,10 @@ const RootLayout = () => {
   }
 
   return (
-    <ClerkProvider tokenCache={tokenCache} publishableKey={publishableKey}>
+    <SafeAreaProvider>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+      
+      <ClerkProvider tokenCache={tokenCache} publishableKey={publishableKey}>
       <ClerkLoaded>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
@@ -52,6 +58,10 @@ const RootLayout = () => {
         </Stack>
       </ClerkLoaded>
     </ClerkProvider>
+    
+    </GestureHandlerRootView>
+    </SafeAreaProvider>
+    
   );
 };
 

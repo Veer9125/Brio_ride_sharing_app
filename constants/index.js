@@ -7,6 +7,12 @@ export const images = {
   check : require("../assets/images/check.png"),
   noResult : require("../assets/images/no-result.png"),
   message : require("../assets/images/message.png"),
+  standard : require("../assets/images/standard.png"),
+  hybrid : require("../assets/images/hybrid.png"),
+  satellite : require("../assets/images/satellite.png"),
+  terrain : require("../assets/images/terrain.png"),
+  splash : require("../assets/images/splash.png"),
+  logo : require("../assets/images/logo.png"),
 };
 
 export const icons = {

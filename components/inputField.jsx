@@ -9,7 +9,7 @@ import {
   Keyboard,
 } from 'react-native';
 import React from 'react';
-import { InputFieldProps } from '../types/type';
+// import { InputFieldProps } from '../types/type';
 
 const InputField = ({
   label,
@@ -47,6 +47,6 @@ const InputField = ({
   );
 };
 
-InputField.propTypes = InputFieldProps;
+// InputField.propTypes = InputFieldProps;
 
 export default InputField;
